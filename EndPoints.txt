@@ -1,0 +1,25 @@
+End_Points = {
+
+     Creating a Room = http://localhost:3000/create-room
+     Body{
+   " no_seats": 80,
+    "amenities_room": ["AC"],
+    "price_1hr": 800
+       }
+    
+     Booking a Room = http://localhost:3000/book-room
+     Body{
+        "customer_name": "yaru",
+       " date": "21-12-2023",
+        "start_time": "08:00",
+        "end_time": "15:00",
+        "room_id": 4
+        }
+
+    All Rooms With Booked Data = http://localhost:3000/list-rooms
+
+    All Customer With Booked Data = http://localhost:3000/list-customers
+
+    How Many Times Customer Booked Room = http://localhost:3000/customer-booking-history/rahul
+
+}
